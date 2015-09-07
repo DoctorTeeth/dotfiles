@@ -87,3 +87,4 @@ source $ZSH/oh-my-zsh.sh
 alias e='/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.8/bin/emacs-24.5'
 alias gl='git log --oneline --all --graph --decorate'
 alias bup='sudo /root/tarsnap-backup.sh'
+alias s='emacs'
