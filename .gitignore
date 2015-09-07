@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Don't ignore dotfiles and other config stuff
+!.gitignore
+!.zshrc
+!.oh-my-zsh/
+!.emacs.d/
