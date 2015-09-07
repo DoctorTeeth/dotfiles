@@ -21,8 +21,8 @@
      ;;better-defaults
      org-stuff
      emacs-lisp
-     (git :variables
-          git-gutter-use-fringe t)
+     ;;(git :variables
+     ;;     git-gutter-use-fringe t)
      markdown
      org
      shell
