@@ -90,3 +90,5 @@ alias bup='sudo /root/tarsnap-backup.sh'
 alias s='emacs'
 
 export KEYTIMEOUT=1
+
+bindkey '^R' history-incremental-search-backward
