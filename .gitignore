@@ -5,3 +5,4 @@
 !.gitignore
 !.zshrc
 !.spacemacs
+!.tmux.conf
