@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode colored-man)
 
 # User configuration
 
@@ -88,3 +88,5 @@ alias e='/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.8/bin/emacs-24.5'
 alias gl='git log --oneline --all --graph --decorate'
 alias bup='sudo /root/tarsnap-backup.sh'
 alias s='emacs'
+
+export KEYTIMEOUT=1
