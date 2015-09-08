@@ -58,6 +58,9 @@ DEFAULT_USER="augustus"
 export PATH="/Developer/NVIDIA/CUDA-7.0/bin:/Users/augustus/torch/install/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/Library/TeX/texbin:/Users/augustus/go/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export PATH=$PATH:/usr/local/cuda/bin/
+export LD_LIBRARY_PATH='/usr/local/cuda-7.0/lib64/'
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -88,6 +91,7 @@ alias e='/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.8/bin/emacs-24.5'
 alias gl='git log --oneline --all --graph --decorate'
 alias bup='sudo /root/tarsnap-backup.sh'
 alias s='emacs'
+alias .='source'
 
 export KEYTIMEOUT=1
 
