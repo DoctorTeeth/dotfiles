@@ -55,7 +55,7 @@ plugins=(git vi-mode colored-man)
 
 DEFAULT_USER="augustus"
 
-export PATH="/Developer/NVIDIA/CUDA-7.0/bin:/Users/augustus/torch/install/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/Library/TeX/texbin:/Users/augustus/go/bin"
+export PATH="/Developer/NVIDIA/CUDA-7.0/bin:/Users/augustus/torch/install/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/Library/TeX/texbin:/Users/augustus/go/bin:/usr/local/cuda/bin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export PATH=$PATH:/usr/local/cuda/bin/
