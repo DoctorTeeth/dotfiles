@@ -17,10 +17,11 @@
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;;auto-completion
-     ;;better-defaults
+     auto-completion
+     better-defaults
      org-stuff
      emacs-lisp
+     gnus
      ;;(git :variables
      ;;     git-gutter-use-fringe t)
      markdown
@@ -29,7 +30,7 @@
      syntax-checking
      c-c++
      python
-     go
+     ;;go
      haskell
      )
    ;; List of additional packages that will be installed wihout being
@@ -154,6 +155,34 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   ;; this is where you can put your org stuff
+  ;; Get email, and store in nnml
+  (setq gnus-secondary-select-methods
+        '(
+          (nnimap "gmail"
+                  (nnimap-address
+                   "imap.gmail.com")
+                  (nnimap-server-port 993)
+                  (nnimap-stream ssl))
+          ))
+
+  ;; Send email via Gmail:
+  (setq message-send-mail-function 'smtpmail-send-it
+        smtpmail-default-smtp-server "smtp.gmail.com")
+
+  ;; Archive outgoing email in Sent folder on imap.gmail.com:
+  (setq gnus-message-archive-method '(nnimap "imap.gmail.com")
+        gnus-message-archive-group "[Gmail]/Sent Mail")
+
+  ;; set return email address based on incoming email address
+  (setq gnus-posting-styles
+        '(((header "to" "address@outlook.com")
+           (address "address@outlook.com"))
+          ((header "to" "augustus.odena@gmail.com")
+           (address "augustus.odena@gmail.com"))))
+
+  ;; store email in ~/gmail directory
+  (setq nnml-directory "~/gmail")
+  (setq message-directory "~/gmail")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
