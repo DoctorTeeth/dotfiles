@@ -94,5 +94,6 @@ alias s='emacs'
 alias .='source'
 
 export KEYTIMEOUT=1
+export PYTHONPATH=~/cgt
 
 bindkey '^R' history-incremental-search-backward
